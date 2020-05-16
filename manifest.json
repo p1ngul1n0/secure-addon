@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Header Checker",
-  "description": "Check the headers of a website!",
+  "name": "Web Checker",
+  "description": "Check se!",
   "version": "1.0",
 
   "browser_action": {
@@ -10,9 +10,9 @@
    "default_popup": "popup.html"
   },
   "permissions": [
-   "activeTab","storage","tabs"
+   "storage","tabs","cookies","*://*/*"
    ],
-    "content_scripts": [
+   "content_scripts": [
    {
      "matches": ["*://*/*"],
      "js": ["content.js"]

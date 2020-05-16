@@ -1,5 +1,7 @@
-var current_url = window.location.toString() //Get current URL of window
-var current_title = document.title //Get page title
-
-chrome.storage.local.set({ current_url: current_url });
-chrome.storage.local.set({ current_title: current_title });
+//chrome.storage.local.clear(null);
+for (var i = 1; i < localStorage.length; i++)   {
+	var key = localStorage.key(i);
+	var data = localStorage.getItem(key);
+    chrome.storage.sync.set({ key : data});
+    console.log(key+' : '+data)
+}
