@@ -18,7 +18,7 @@ function check_headers(){ //Verify security response headers in current URL
                         "x-xss-protection",
                         "content-security-policy",
                         "strict-transport-security",
-                        "x-content-type-pptions",
+                        "x-content-type-options",
                         "x-permitted-cross-domain-policies",
                         "referrer-policy",
                         "expect-ct",
